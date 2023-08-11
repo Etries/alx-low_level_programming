@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*main - display all lowercase alphabets in decreasing order z-a
+*main - display all digits between 0 and 9  
 *
 *Return: will return (0) (success)
 *

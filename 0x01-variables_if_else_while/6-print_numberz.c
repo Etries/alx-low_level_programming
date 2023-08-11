@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
-*main - display all lowercase alphabets in decreasing order z-a
-*
+*main - display all digits 0-9 with putchar
 *Return: will return (0) (success)
 *
 */

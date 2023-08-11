@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*main - display all lowercase alphabets in decreasing order z-a
+*main - display all lowercase alphabets  followed by upper case
 *
 *Return: will return (0) (success)
 *

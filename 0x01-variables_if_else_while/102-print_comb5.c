@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*main - prints all possible different combination os 3 digits
+*main - prints all possible  combination os 2 2-digit numbers
 *
 *Return: will return (0) (success)
 *
