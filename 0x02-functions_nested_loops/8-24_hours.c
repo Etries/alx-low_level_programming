@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* jack_bauer - finds the last digit by modulus
+* jack_bauer - list all 24 by every minute
 *
 * Return: Nothing
 *
