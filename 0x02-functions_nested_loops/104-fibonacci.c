@@ -14,6 +14,7 @@ int main(void)
 	j = 0;
 	k = 1;
 	l = 1;
+	printf("%lu , %lu , %lu ", j, l ,k);
 	while (i < 98)
 	{
 		l = j + k;
