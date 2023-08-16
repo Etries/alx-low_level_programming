@@ -34,10 +34,11 @@ void print_times_table(int n)
 			_putchar(num % 10 + 48);
 		}
 		else
-                {
-                        _putchar(num / 100 + 48);
-                        _putchar(num % 100 + 48);
-                }
+		{
+			_putchar(num / 100 + 48);
+			_putchar(num % 100 + 48);
+			_putchar(num % 10 + 48);
+		}
 		if (j < n)
 		{
 			_putchar(',');
