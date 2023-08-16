@@ -36,7 +36,7 @@ void print_times_table(int n)
 		else
 		{
 			_putchar(num / 100 + 48);
-			_putchar(num % 100 + 48);
+			_putchar((num % 100) / 10  + 48);
 			_putchar(num % 10 + 48);
 		}
 		if (j < n)
