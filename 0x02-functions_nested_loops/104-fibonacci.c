@@ -13,7 +13,7 @@ int main(void)
 	i = 0;
 	j = 0;
 	k = 1;
-	while (i < 98)
+	while (i <= 98)
 	{
 		l = j + k;
 		printf("%lu", l);
