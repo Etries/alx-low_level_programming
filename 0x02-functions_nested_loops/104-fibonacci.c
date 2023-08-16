@@ -8,11 +8,13 @@
 int main(void)
 {
 	int i;
-	unsigned long int j, k, l;
+/*	unsigned long int j, k, l;
 
 	i = 0;
 	j = 0;
 	k = 1;
+*/
+	i = 0;
 
 	while (i < 98)
 	{
