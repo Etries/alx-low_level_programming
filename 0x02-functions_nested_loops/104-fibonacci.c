@@ -13,7 +13,7 @@ int main(void)
 	i = 0;
 	j = 0;
 	k = 1;
-
+	l = 1;
 	while (i < 98)
 	{
 		l = j + k;
