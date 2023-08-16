@@ -17,11 +17,11 @@ int main(void)
 	while (i < 98)
 	{
 		l = j + k;
-		printf("%lu", l);
+/*		printf("%lu", l);
 		j = k;
 		k = l;
 		if (i < 97)
-			printf(", ");
+			printf(", ");*/
 		i++;
 	}
 	printf("\n");
