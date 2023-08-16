@@ -24,11 +24,17 @@ void print_times_table(int n)
 				_putchar(' ');
 			_putchar(num + 48);
 		}
-		else
+		else if (num < 100)
 		{
+			_putchar(' ');
 			_putchar(num / 10 + 48);
 			_putchar(num % 10 + 48);
 		}
+		else
+                {
+                        _putchar(num / 100 + 48);
+                        _putchar(num % 100 + 48);
+                }
 		if (j < n)
 		{
 			_putchar(',');
