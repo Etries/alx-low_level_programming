@@ -7,6 +7,9 @@
  */
 int main(void)
 {
-    more_numbers();
-    return (0);
+
+	print_diagonal(0);
+	print_diagonal(2);
+	print_diagonal(10);
+	return (0);
 }
