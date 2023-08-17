@@ -8,7 +8,7 @@
  * Return: returns the result of the two numbers multiplied
  *
  */
-int mul(int a, int b);
+int mul(int a, int b)
 {
 	return (a * b);
 }
