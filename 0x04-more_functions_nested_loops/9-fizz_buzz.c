@@ -9,6 +9,7 @@ fizzbuzz multiple of both
 int main(void)
 {
 	int num;
+	
 	num = 1;
 
 	while (num < 100)
