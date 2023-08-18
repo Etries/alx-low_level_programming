@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
-*main : prints a fiz if multiple of 3, buzz multiple of 5 n
-fizzbuzz multiple of both
+* main - prints a fiz if multiple of 3, buzz multiple of 5 n
 *
 *
 *Return: returns 0
@@ -9,7 +8,7 @@ fizzbuzz multiple of both
 int main(void)
 {
 	int num;
-	
+
 	num = 1;
 
 	while (num <= 100)
