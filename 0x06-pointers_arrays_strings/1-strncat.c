@@ -7,7 +7,7 @@
  *
  * Return : return the pointer to result
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src, int n)
 		i++;
 	for (j = 0; j < n && src[j] != '\0'; j++)
 	{
-		dest[i++] = src[j++];
+		dest[i++] = src[j];
 	}
 	return (dest);
 }
