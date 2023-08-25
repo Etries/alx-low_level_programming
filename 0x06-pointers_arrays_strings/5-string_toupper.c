@@ -2,7 +2,7 @@
 
 /**
 *string_toupper - changes all lowercases letters of a string to uppercase
-*@str: string to be changed 
+*@str: string to be changed
 *Return: returns a pointer to string char
 */
 char *string_toupper(char *str)
