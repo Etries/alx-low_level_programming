@@ -2,25 +2,29 @@
 
 /**
  * leet - Encodes a string into 1337
- * @str: String of variable pointer
+ * @c: String of variable pointer
  * Return: String that is encoded
  */
 
-
-char *leet(char *str)
+char *leet(char *c)
 {
-	int i = 0;
+	char *cp = c;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
+	unsigned int i;
 
-	char leet[256] = {
-	['a'] = '4', ['A'] = '4',
-	['e'] = '3', ['E'] = '3', ['o'] = '0', ['O'] = '0',
-	['t'] = '7', ['T'] = '7', ['l'] = '1', ['L'] = '1'
-	};
-	while (str[i] != '\0')
+	while (*c)
 	{
-		if (leet[str[i]] != '\0')
-			str[i] = leet[str[i]];
-		i++;
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		{
+			if (*c == key[i] || *c == key[i] + 32)
+			{
+				*c = 48 + value[i];
+			}
+		}
+		c++;
 	}
-	return (str);
+
+	return (cp);
+
 }
