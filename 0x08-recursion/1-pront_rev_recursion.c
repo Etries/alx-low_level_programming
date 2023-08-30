@@ -7,10 +7,10 @@
  */
 void _prints_rev_recursion(char *s)
 {
-	if (s != '\0')
+	if (*s != '\0')
 	{
 		_prints_rev_string(s++)
-		_putchar(s)
+		_putchar(*is)
 	}
 	putchar('\n');
 
