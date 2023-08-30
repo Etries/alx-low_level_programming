@@ -5,25 +5,24 @@
  * @x: parameter one
  * @y: parameter two
  *
- * Returns: on success 1 ans failure -1
+ * Return: on success 1 ans failure -1
  */
 int sqr_eval(int x, int y)
 {
 	if (y * y == x)
 		return (y);
-	else if (y * y >x)
+	else if (y * y > x)
 		return (-1);
-	return sqr_eval(x, y + 1);
+	return (sqr_eval(x, y + 1));
 }
 
 
 /**
- *sqrt_recursion - returns natural square root of a number
+ *________sqrt_recursion - returns natural square root of a number
  *@n : number parameter
- *
- * Return: retunrs the sware root
+ *Return: retunrn the sware root
  */
 int _sqrt_recursion(int n)
 {
-	return(sqr_eval(n, 1));
+	return (sqr_eval(n, 1));
 }
