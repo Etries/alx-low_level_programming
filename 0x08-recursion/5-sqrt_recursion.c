@@ -13,7 +13,7 @@ int sqr_eval(int x, int y)
 		return (y);
 	else if (y * y >x)
 		return (-1);
-	return sqr_eval(x, b + 1);
+	return sqr_eval(x, y + 1);
 }
 
 
