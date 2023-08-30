@@ -18,7 +18,7 @@ int sqr_eval(int x, int y)
 
 
 /**
- *________sqrt_recursion - returns natural square root of a number
+ *_sqrt_recursion - returns natural square root of a number
  *@n : number parameter
  *Return: retunrn the sware root
  */
