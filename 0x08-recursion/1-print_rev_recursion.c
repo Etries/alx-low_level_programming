@@ -1,6 +1,6 @@
 #include "mian.h"
 /**
- * _print_rev_recursion - prints string in reverse
+ * _prints_rev_recursion - prints string in reverse
  * @s : dtring to be reversed
  *
  * Return : returns nothing
@@ -13,5 +13,4 @@ void _prints_rev_recursion(char *s)
 		_putchar(*is)
 	}
 	putchar('\n');
-
-		
+}
