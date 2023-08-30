@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * _prints_rev_recursion - prints string in reverse
  * @s : dtring to be reversed
