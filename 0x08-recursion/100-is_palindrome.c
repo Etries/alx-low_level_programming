@@ -22,12 +22,12 @@ int last_index(char *s)
  */
 int checks_palindrome(char *s, int i, int j, int pair)
 {
-	if ((i == j && pair !=0) || (i == j +1 && pair == 0))
+	if ((i == j && pair !=0) || (i == j + 1 && pair == 0))
 		return (1);
 	else if (s[i] != s[j])
 		return (0);
 	else
-		return(checks_palindrome(s, ++i, --j, pair));
+		return(checks_palindrome(s, i + 1, j - 1, pair));
 }
 
 /**
