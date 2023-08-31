@@ -16,6 +16,7 @@ int checks_palindrome(char *s, int i, int j)
 	else
 		return (0);
 }
+
 /**
  *is_palindrome - checks if a string is a palindrome
  *@s: string parameter
