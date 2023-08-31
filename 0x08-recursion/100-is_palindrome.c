@@ -11,7 +11,7 @@ int last_index(char *s)
 
 	if (*s != '\0')
 		n += last_index(s + 1) + 1;
-	return (n - 1);
+	return (n );
 }
 /**
  * checks_palindrome - checks if agiven substring are palindrome
@@ -42,5 +42,5 @@ int is_palindrome(char *s)
 
 	i = 0;
 	j = last_index(s);
-	return (checks_palindrome(s, i, j, j % 2));
+	return (checks_palindrome(s, i, j - 1, j % 2));
 }
