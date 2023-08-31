@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * checks_palindrome - checks if agiven substring are palindrome
  * @s: string parameter
@@ -8,6 +9,7 @@
  */
 int checks_palindrome(char *s, int i, int j)
 {
+	printf("%s and i is %d j is %d \n", s, i, j);
 	if (i == j)
 		return (1);
 	else if (s[i] == s[j])
@@ -30,3 +32,12 @@ int is_palindrome(char *s)
 	j = 0;
 	while (s[j] != '\0')
 		j++;
+	return (checks_palindrome(s, i, j - 1));
+}
+int main() {
+    char chaine[100] = "radar";
+    int pal;
+    pal = is_palindrome(chaine);
+    printf("%d\n", pal);
+    return 0;
+}
