@@ -1,12 +1,12 @@
 #include "main.h"
 
-int strlen_no_wilds(char *str);
+int strlen_wilds(char *str);
 void iterate_wild(char **wildstr);
 char *postfix_match(char *str, char *postfix);
 int wildcmp(char *s1, char *s2);
 
 /**
- * strlen_no_wilds - Returns the length of a string,
+ * strlen_wilds - Returns the length of a string,
  *                   ignoring wildcard characters.
  * @str: The string to be measured.
  *
@@ -54,8 +54,8 @@ void iterate_wild(char **wildstr)
  */
 char *postfix_match(char *str, char *postfix)
 {
-	int str_len = strlen_no_wilds(str) - 1;
-	int postfix_len = strlen_no_wilds(postfix) - 1;
+	int str_len = strlen_wilds(str) - 1;
+	int postfix_len = strlen_wilds(postfix) - 1;
 
 	if (*postfix == '*')
 		iterate_wild(&postfix);
