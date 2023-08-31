@@ -14,6 +14,8 @@ int checks_palindrome(char *s, int i, int j)
 		checks_palindrome(s, ++i, --j);
 	else
 	return (0);
+
+	return (0);
 }
 
 /**
