@@ -5,7 +5,7 @@
  *
  * Return: returns the last index
  */
-int last_index(chas *s)
+int last_index(char *s)
 {
 	int n = 0;
 
