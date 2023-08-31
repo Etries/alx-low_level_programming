@@ -30,3 +30,5 @@ int is_palindrome(char *s)
 	j = 0;
 	while (s[j] != '\0')
 		j++;
+	return (checks_palindrome(s, i, j);
+}
