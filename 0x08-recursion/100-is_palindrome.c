@@ -10,7 +10,7 @@ int last_index(char *s)
 	int n = 0;
 
 	if (*s != '\0')
-		n += last_index(++s) + 1;
+		n += last_index(s + 1) + 1;
 	return (n - 1);
 }
 /**
