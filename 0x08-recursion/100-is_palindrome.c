@@ -22,6 +22,9 @@ int last_index(char *s)
  */
 int checks_palindrome(char *s, int i, int j)
 {
+	_putchar(i);
+	_putchar(j);
+	_putchar('\n');
 	if (i == j)
 		return (1);
 	else if (s[i] == s[j])
