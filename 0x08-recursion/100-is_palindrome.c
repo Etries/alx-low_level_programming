@@ -1,5 +1,19 @@
 #include "main.h"
 /**
+ * last_index - gets last index
+ * @s - string parameter
+ *
+ * Return: returns the last index
+ */
+int last_index(chas *s)
+{
+	int n = 0;
+
+	if (*s != '\0')
+		n += last_index(++s)+1;
+	return (n);
+}
+/**
  * checks_palindrome - checks if agiven substring are palindrome
  * @s: string parameter
  * @i: index of a char to be checked
@@ -29,8 +43,6 @@ int is_palindrome(char *s)
 	int i, j;
 
 	i = 0;
-	j = 0;
-	while (s[j] != '\0')
-		j++;
-	return (checks_palindrome(s, i, j));
+	j = last_index(s);
+	return (checks_palindrome(s, i, --j));
 }
