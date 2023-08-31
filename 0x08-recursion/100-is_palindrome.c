@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * last_index - gets last index
- * @s - string parameter
+ * @s:  string parameter
  *
  * Return: returns the last index
  */
@@ -10,8 +10,8 @@ int last_index(char *s)
 	int n = 0;
 
 	if (*s != '\0')
-		n += last_index(++s)+1;
-	return (n);
+		n += last_index(++s) + 1;
+	return (n - 1);
 }
 /**
  * checks_palindrome - checks if agiven substring are palindrome
@@ -44,5 +44,5 @@ int is_palindrome(char *s)
 
 	i = 0;
 	j = last_index(s);
-	return (checks_palindrome(s, i, --j));
+	return (checks_palindrome(s, i, j));
 }
