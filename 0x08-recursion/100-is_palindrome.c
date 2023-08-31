@@ -20,15 +20,15 @@ int last_index(char *s)
  * @j: index of a char to be checked
  * Return: return 1 if palindrome else 0
  */
-int checks_palindrome(char *s, int i, int j)
+int checks_palindrome(char *s, int i, int j, int pair)
 {
-	if (i == j)
+	if (i == j && pair !=0) || (i == j +1 && pair == 0)
 		return (1);
 	else if (s[i] == s[j])
 		checks_palindrome(s, ++i, --j);
 	else
 	return (0);
-
+	return (0);
 }
 
 /**
@@ -43,5 +43,5 @@ int is_palindrome(char *s)
 
 	i = 0;
 	j = last_index(s);
-	return (checks_palindrome(s, i, j));
+	return (checks_palindrome(s, i, j, j % 2));
 }
