@@ -25,7 +25,7 @@ int checks_palindrome(char *s, int i, int j, int pair)
 	if ((i == j && pair !=0) || (i == j +1 && pair == 0))
 		return (1);
 	else if (s[i] == s[j])
-		checks_palindrome(s, ++i, --j);
+		checks_palindrome(s, ++i, --j, pair);
 	else
 	return (0);
 	return (0);
