@@ -7,7 +7,7 @@
  * @j: index of a char to be checked
  * Return: return 1 if palindrome else 0
  */
-int checks_palindrome(char s, int i, int j)
+int checks_palindrome(char *s, int i, int j)
 {
 	if (i == j)
 		return (1);
