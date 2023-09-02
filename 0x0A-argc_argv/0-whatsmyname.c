@@ -1,5 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 
+/**
+ * main - prints the function name
+ *
+ *
+ * @argc: amount of arguments passed through the program
+ * @argv: pointer that contains the arrays of the arguments
+ *
+ * Return: 0
+ */
 
 int main(int argc, char *argv[]) __attribute__((unused));
 int main(int argc, char *argv[]) {
