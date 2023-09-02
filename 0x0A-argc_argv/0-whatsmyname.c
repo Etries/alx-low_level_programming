@@ -3,17 +3,15 @@
 
 /**
  * main - prints the function name
- *
- *
- * @argc: amount of arguments passed through the program
- * @argv: pointer that contains the arrays of the arguments
+ * @argc: number of args
+ * @argv: array of argsì
  *
  * Return: 0
  */
 
 int main(int argc, char *argv[]) __attribute__((unused));
-int main(int argc, char *argv[]) {
-    printf("%s\n", argv[0]);
-    return 0;
+int main(int argc, char *argv[])
+{
+	printf("%s\n", argv[0]);
+	return (0);
 }
-
