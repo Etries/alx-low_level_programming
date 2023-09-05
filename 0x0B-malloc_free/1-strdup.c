@@ -10,18 +10,18 @@
 char *_strdup(char *str)
 {
 	int i, j;
-	char duplicate_str;
+	char *dup_str;
 
 	if (str == NULL)
 		return (NULL);
 	j = 0;
 	while (str[j] != '\0')
 		j++;
-	duplicate_str = malloc(++j * sizeof(char));
-	if (duplicate_str == NULL)
+	dup_str = malloc(++j * sizeof(char));
+	if (dup_str == NULL)
 		return (NULL);
 	while (*str != '\0')
-		dupicate_str[i] = str++;
+		dup_str[i] = str++;
 
-	return (dupicate_str);
+	return (dup_str);
 }
