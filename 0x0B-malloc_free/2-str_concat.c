@@ -37,3 +37,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	str_concat[++k] = '\0';
 	return (str_concat);
+}
