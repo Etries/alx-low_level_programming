@@ -5,14 +5,14 @@
  *alloc_grid - prints a 2-dimensional arrat of ints.
  *@width : the number of columns
  *@height : number of rows
- *Return : returns pointer to the array
+ *Return: returns pointer to the array
  */
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-	int **;
-	
-	if ((width <= 0) || (height <= 0 ))
+	int **arr;
+
+	if ((width <= 0) || (height <= 0))
 		return (NULL);
 
 	if (arr == NULL)
