@@ -23,14 +23,13 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	str_concat = malloc(i + j + 1);
 	if (str_concat == NULL)
-		return (NULL);
-		
-	while (*s1 != '\0')
+		return (NULL);		
+	while (*s1 != '\0' && s1 != NULL)
 	{
 		str_concat[k++] = *s1;
       		s1++;
 	}
-	while (*s2 != '\0')
+	while (*s2 != '\0' && s2 != NULL)
 	{
 		str_concat[k++] = *s2;
 		s2++;
