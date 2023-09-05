@@ -9,7 +9,7 @@
  *
  * Return : retuns a pointer to the concatinated string's pointer
  */
-char *str_concat(char *s1, *s2)
+char *str_concat(char *s1, char *s2)
 {
 	int i, j;
 	char *str_concat;
