@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * create_array - creates an arary of chars that will be init by a specific char
@@ -13,10 +14,10 @@ char *create_array(unsigned int size, char c)
 	char *array;
 
 	if (size == 0)
-		return NULL;
+		return (NULL);
 	array = malloc(n * sizeof(char));
 	if (array == NULL)
-		return NULL;
+		return (NULL);
 	for (i = 0; i < size; i++)
 		array[i] = c;
 	return (array);
