@@ -24,15 +24,15 @@ char *str_concat(char *s1, char *s2)
 	str_concat = malloc(i + j + 1);
 	if (str_concat == NULL)
 		return (NULL);
-	if (*s1 == NULL)
+	if (s1 == NULL)
 		s1 = "";
 	while (*s1 != '\0')
 	{
 		str_concat[k++] = *s1;
 		s1++;
 	}
-i	if (*s2 == NULL)
-	s2 = "";
+	if (s2 == NULL)
+		s2 = "";
 	while (*s2 != '\0')
 	{
 		str_concat[k++] = *s2;
