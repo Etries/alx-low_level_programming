@@ -7,13 +7,13 @@
  * @s1 : first string parameter
  * @s2 : second string parameter
  *
- * Return : retuns a pointer to the concatinated string's pointer
+ * Return: retuns a pointer to the concatinated string's pointer
  */
 char *str_concat(char *s1, char *s2)
 {
 	int i, j, k;
 	char *str_concat;
-	
+
 	i = 0;
 	j = 0;
 	k = 0;
@@ -29,10 +29,10 @@ char *str_concat(char *s1, char *s2)
 	while (*s1 != '\0')
 	{
 		str_concat[k++] = *s1;
-      		s1++;
+		s1++;
 	}
-	if (*s2 == NULL)
-		s2 = "";
+i	if (*s2 == NULL)
+	s2 = "";
 	while (*s2 != '\0')
 	{
 		str_concat[k++] = *s2;
