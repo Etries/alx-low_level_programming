@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * _calloc - allocates memory using malloc, and initializes it to zero
  * @size: size of the memory block to be allocated
@@ -13,7 +14,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *block;
 	unsigned int i;
 
-	if (nmemb == 0 || size ==)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 	block = malloc(nmemb * size);
 	if (block != NULL)
