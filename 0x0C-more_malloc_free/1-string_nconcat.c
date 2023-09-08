@@ -7,7 +7,7 @@
  * @s1 : string 1 to be concatinated
  * @s2 : string 2 to be concatinated
  * @n : number of chars from s2 to be cont=catinated to s1
- * Return : a cha pointer to a new string
+ * Return: a cha pointer to a new string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
