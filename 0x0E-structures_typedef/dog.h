@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
-*dog - a new type of struc data
+*struct dog - a new type of struc data
 *@name: name of dog
 *@age: age of dog
 *@owner: nam of the ownere
