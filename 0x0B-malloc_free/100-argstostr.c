@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * argstostr - concatinates all args 
+ * argstostr - concatinates all args
  * @ac : number of arguments
  * @av : array of args
  * Return: return a pointer to  string
@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 		}
 		k++;
 	}
-	str_arr = malloc(sizeof(char) * ( k + 1));
+	str_arr = malloc(sizeof(char) * (k + 1));
 	if (str_arr == NULL)
 		return (NULL);
 	l = 0;
