@@ -8,16 +8,14 @@
 */
 char *_strcopy(char *dest, char *src)
 {
-	int i;
+	int index = 0;
 
-	for (i = 0; src[i] != '\0' ; i++)
-		dest[i] = src[i];
+	for (; src[index] ; index++)
+	dest[index] = src[index];
 
-	dest[i] = '\0';
-	printf("destination is %s \n", dest);
+	dest[index] = '\0';
 	return (dest);
 }
-
 /**
 *new_dog - creates a new dog type
 *@name: name of new dog
@@ -38,9 +36,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	name_len = 0;
 	owner_len = 0;
-	while (*(name++) != '\0')
+	while ((name[name_len]) != '\0')
 		name_len++;
-	while (*(owner++) != '\0')
+	while ((owner[owner_len]) != '\0')
 		owner_len++;
 	d->name = malloc(sizeof(char) * (name_len + 1));
 	if (d->name == NULL)
@@ -59,6 +57,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d->name = _strcopy(d->name, name);
 	d->age = age;
 	d->owner = _strcopy(d->owner, owner);
-
 	return (d);
 }
