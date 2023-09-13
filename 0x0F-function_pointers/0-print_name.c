@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  *print_name - prints a name given.
  *@name: pointer to a string
