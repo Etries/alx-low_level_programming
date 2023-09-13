@@ -10,10 +10,11 @@ char *_strcopy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; src[i] ; i++)
+	for (i = 0; src[i] != '\0' ; i++)
 		dest[i] = src[i];
 
 	dest[i] = '\0';
+	printf("destination is %s \n", dest);
 	return (dest);
 }
 
