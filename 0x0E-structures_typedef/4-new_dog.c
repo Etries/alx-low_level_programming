@@ -11,7 +11,7 @@ char *_strcopy(char *dest, char *src)
 	int i;
 
 	for (i = 0; src[i] ; i++)
-	dest[i] = src[i];
+		dest[i] = src[i];
 
 	dest[i] = '\0';
 	return (dest);
@@ -35,12 +35,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (d == NULL)
 		return (NULL);
 
-	while (str)
+	while (name)
 		name_len++;
-	while (str)
-		own_len++;
-	d->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	d->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	while (owner)
+		owner_len++;
+	d->name = malloc(sizeof(char) * (name_len + 1));
+	d->owner = malloc(sizeof(char) * (owner_len + 1));
 	if (d->name == NULL || d->owner == NULL)
 	{
 		free(d);
