@@ -1,4 +1,5 @@
-#include <stdargs.h>
+#include <stdarg.h>
+#include <stdio.h>
 
 /**
  * print_numbers - prints all numbers in args followed by
@@ -9,18 +10,18 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list vargs_list;
+	va_list args_list;
 	unsigned int i;
 
-	va_start(valist, n);
+	va_start(args_list, n);
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(valist, int));
+		printf("%d", va_arg(args_list, int));
 		if (separator != NULL && i < n - 1)
 			printf("%s", separator);
 	}
 
 	printf("\n");
-	va_end(valist);
+	va_end(args_list);
 }
