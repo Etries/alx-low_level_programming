@@ -2,10 +2,10 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - adds all arguments 
- * @n: The number of arguments to be passed
+ *sum_them_all - adds all arguments
+ *@n: The number of arguments to be passed
  *
- * Return: The sum of all arguments
+ *Return: The sum of all arguments
  */
 
 int sum_them_all(const unsigned int n, ...)
