@@ -3,7 +3,7 @@
 
 /**
  * print_all - prints any data type.
- * @foramt:  a constant pointer to the string of data types
+ * @format:  a constant pointer to the string of data types
  *
  * Return : nothing
  */
@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *str;
 	int i;
-	
+
 	i = 0;
 	va_start(args, format);
 	while (format[i] != '\0')
