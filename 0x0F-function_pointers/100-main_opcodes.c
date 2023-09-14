@@ -9,7 +9,7 @@
   */
 int main(int argc, char *argv[])
 {
-	int a, j;
+	int i, j;
 
 	if (argc != 2)
 	{
@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	b = atoi(argv[1]);
+	j = atoi(argv[1]);
 	if (j < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	for (i = 0; i < bytes; ++)
+	for (i = 0; i < j; i++)
 	{
 		printf("%02hhx", *((char *)main + i));
 		if (i  < j - 1)
