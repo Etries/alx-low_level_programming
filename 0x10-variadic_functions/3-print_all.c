@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 
 	i = 0;
 	va_start(args, format);
-	while (format && format[i] != '\0')
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
@@ -29,11 +29,13 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(args, double));
 				break;
 			case 's':
-				str = va_arg(args, char *);
+				str = args(args, char *);
 				if (str == NULL)
-					printf("nill");
-				else
-					printf("%s", str);
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", str);
 				break;
 			default:
 				break;
