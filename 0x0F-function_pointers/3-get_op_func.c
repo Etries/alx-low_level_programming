@@ -3,7 +3,7 @@
  *get_op_func - function to compare and send results .
  *@s: operator used which is a char
  *
- *Return: 
+ *Return:null if failed or result
  */
 int (*get_op_func(char *s))(int, int)
 {
