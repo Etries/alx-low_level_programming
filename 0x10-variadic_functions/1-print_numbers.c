@@ -5,7 +5,7 @@
  * print_numbers - prints all numbers in args followed by
  * a new line
  * @separator: the string to be printed between numbers
- * @n : number of args passed 
+ * @n : number of args passed
  * Return : returns nothing.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
