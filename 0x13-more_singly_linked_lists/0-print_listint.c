@@ -18,7 +18,6 @@ size_t print_list(const list_t *h)
 	/* while we have a pointer to list */
 	while (h != NULL)
 	{
-		
 		if (h->str == NULL)
 		{
 
