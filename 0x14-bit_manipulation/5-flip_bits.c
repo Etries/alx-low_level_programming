@@ -8,7 +8,7 @@
 *Return: the number of flipped bits
 */
 
-unsigned isnt flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int flipped_bits = n ^ m;
 	int counter = 0;
