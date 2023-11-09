@@ -1,34 +1,34 @@
 #include "lists.h"
 /**
- *delete_dnodeint_at_index- unction that deletes the node at index.
- *@head: a ptr to ptr the listint_t list
- *@index:the node that should be deleted. Index starts at 0
- *Return: 1 if it succeeded, -1 if it failed.
+ *delete_dnodeint_at_index - deletes the node at given index.
+ *@head: a pointer to head of DLL
+ *@index: index of node to be deleted
+ *Return: returns 1 if it succeeded or -1 if it failed.
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *current;
 	dlistint_t *temp;
-	unsigned int pos;
+	unsigned int position;
 
 	if (head == NULL)
 		return (-1);
 	if (*head == NULL)
 		return (-1);
 	current = *head;
-	pos = 0;
+	position = 0;
 	if (index == 0)
 	{
 		*head = (*head)->next;
 	}
 	else
 	{
-		while (pos < (index - 1))
+		while (position < (index - 1))
 		{
 			if (current == NULL)
 				return (-1);
 			current = current->next;
-			pos++;
+			position++;
 		}
 		temp = current;
 		current = current->next;
