@@ -1,11 +1,9 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
- *add_dnodeint-insert node at the begining
- *@head: a ptr to the doubly linked list
- *@n: data
- *Return: new node
+ *add_dnodeint-inserts node at the begining of dll
+ *@head: a pointer to head of the dll
+ *@n: value variable
+ *Return: return a new node to dll
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {

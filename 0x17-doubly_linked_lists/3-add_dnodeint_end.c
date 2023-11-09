@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- *add_dnodeint_end-insert node at the end of doubly linked list
- *@head: a ptr to the doubly linked list
- *@n: data
- *Return: new node address
+ *add_dnodeint_end-inserts node at the end of dll
+ *@head: a pointer ti the head of DLL
+ *@n: value variable
+ *Return: returns address of new node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
